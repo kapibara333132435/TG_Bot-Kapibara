@@ -16,7 +16,7 @@ type Configuration struct {
 // ConfigReader - функция для чтения файла конфигурации, возвращает структуру с конфигурацией
 func ConfigReader() *Configuration {
 	// Читаем файл с конфигурацией, если файл не читается, то сообщаем об ошибке
-	configFile, err := os.ReadFile("config.json")
+	configFile, err := os.ReadFile("./config.json")
 	if err != nil {
 		fmt.Println("Ошибка открытия конфиг файла - ", err)
 	}
